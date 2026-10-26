@@ -1,0 +1,33 @@
+name: Run assignment
+on: [push, workflow_dispatch]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Q1 Wallet
+        working-directory: q1_wallet
+        run: python test_wallet.py
+
+      - name: Q3 Channels
+        working-directory: q3_channels
+        run: |
+          python main.py
+          python main_with_push.py
+
+      - name: Q4 Connections
+        working-directory: q4_connections
+        run: |
+          python leaky.py
+          python fixed.py
+          python people.py
+
+      - name: Q5 Diamond
+        working-directory: q5_diamond
+        run: |
+          python diamond.py
+          python composition.py
