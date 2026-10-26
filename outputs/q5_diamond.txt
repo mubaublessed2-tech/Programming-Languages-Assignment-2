@@ -1,0 +1,3 @@
+Name: Tendai
+Role: Student and Staff
+MRO : ['TeachingAssistant', 'Student', 'Staff', 'Person', 'object']

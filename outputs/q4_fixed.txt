@@ -1,0 +1,10 @@
+connection opened, open = 1
+found student 1
+connection closed, open = 0
+connection opened, open = 1
+connection closed, open = 0
+error: bad id
+connection opened, open = 1
+found student 2
+connection closed, open = 0
+open connections now: 0

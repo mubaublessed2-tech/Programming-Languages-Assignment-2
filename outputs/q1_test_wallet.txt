@@ -1,0 +1,9 @@
+Opening balance: 500
+1. Deposit 100 -> 600
+2. Valid withdrawal of 200 -> 400
+3. Refused (bigger than balance): Insufficient funds
+4. Refused (daily limit): Daily limit of 300 exceeded
+5. After w.balance = -500, getBalance() -> 400
+   Python did not raise an error: it created a NEW, unrelated attribute
+   'balance'. The real private field (_Wallet__balance) is unchanged.
+After newDay(), withdraw 150 works -> 250

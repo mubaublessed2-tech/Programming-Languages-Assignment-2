@@ -1,0 +1,4 @@
+[SMS] Exam moved to Friday (cost 8 cents)
+[Email] Exam moved to Friday (cost 0 cents)
+[WhatsApp] Exam moved to Friday (cost 4 cents)
+Total cost: 12 cents
